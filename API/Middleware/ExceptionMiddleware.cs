@@ -1,18 +1,20 @@
 using System.Net;
 using System.Text.Json;
+using Application.Core;
 
 namespace API.Middleware
 {
     public class ExceptionMiddleware
     {
-        private readonly IHostEnvironment _env;
-        private readonly ILogger<ExceptionMiddleware> _logger;
         private readonly RequestDelegate _next;
-        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger, IHostEnvironment env)
+        private readonly ILogger<ExceptionMiddleware> _logger;
+        private readonly IHostEnvironment _env;
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger,
+            IHostEnvironment env)
         {
-            _next = next;
-            _logger = logger;
             _env = env;
+            _logger = logger;
+            _next = next;
         }
 
         public async Task InvokeAsync(HttpContext context)
@@ -25,11 +27,11 @@ namespace API.Middleware
             {
                 _logger.LogError(ex, ex.Message);
                 context.Response.ContentType = "application/json";
-                context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
                 var response = _env.IsDevelopment()
-                ? new AppException(context.Response.StatusCode, ex.Message, ex.StackTrace?.ToString())
-                : new AppException(context.Response.StatusCode, "Server Error");
+                    ? new AppException(context.Response.StatusCode, ex.Message, ex.StackTrace?.ToString())
+                    : new AppException(context.Response.StatusCode, "Internal Server Error");
 
                 var options = new JsonSerializerOptions{PropertyNamingPolicy = JsonNamingPolicy.CamelCase};
 

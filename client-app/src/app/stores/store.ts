@@ -4,7 +4,7 @@ import CommonStore from "./commonStore";
 
 interface Store {
     commonStore: CommonStore;
-    activityStore: ActivityStore
+    activityStore: ActivityStore;
 }
 
 export const store: Store = {

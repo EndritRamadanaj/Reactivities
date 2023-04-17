@@ -13,9 +13,10 @@ import ServerError from '../../features/errors/ServerError';
 
 function App() {
   const location = useLocation();
+
   return (
     <>
-    <ToastContainer position='bottom-right' hideProgressBar />
+    <ToastContainer position='bottom-right' hideProgressBar theme='colored' />
       <Route exact path='/' component={HomePage} />
       <Route
         path={'/(.+)'}

@@ -1,13 +1,15 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import { Activity } from "../models/activity";
 import agent from "../api/agent";
+import {format} from 'date-fns';
+import { v4 as uuid } from 'uuid';
 
 export default class ActivityStore {
     activityRegistry = new Map<string, Activity>();
-    selectedActivity: Activity | undefined = undefined;
+    selectedActivity?: Activity = undefined;
     editMode = false;
     loading = false;
-    loadingInitial = true;
+    loadingInitial = false;
 
     constructor() {
         makeAutoObservable(this)
@@ -16,13 +18,13 @@ export default class ActivityStore {
     get activitiesByDate() {
         return Array.from
         (this.activityRegistry.values()).sort((a, b) => 
-        Date.parse(a.date) - Date.parse(b.date));
+        a.date!.getTime() - b.date!.getTime());
     }
 
     get groupedActivitites() {
         return Object.entries(
             this.activitiesByDate.reduce((activities, activity) => {
-                const date = activity.date;
+               const date = format(activity.date!, 'dd MMM yyyy')
                 activities[date] = activities[date] ? [...activities[date], activity] : [activity];
                 return activities;
             }, {} as {[key: string]: Activity[]})
@@ -30,16 +32,16 @@ export default class ActivityStore {
     }
 
     loadActivities = async () => {
-        this.loadingInitial = true;
+        this.setLoadingInitial(true);
         try {
             const activities = await agent.Activities.list();
                 activities.forEach(activity => {
                     this.setActivity(activity);
                   })
-                  this.setLoadingIntial(false);
+                  this.setLoadingInitial(false);
         } catch (error) {
             console.log(error);
-                this.setLoadingIntial(false);
+                this.setLoadingInitial(false);
         }
     }
 
@@ -49,24 +51,22 @@ export default class ActivityStore {
             this.selectedActivity = activity;
             return activity;
         } else {
-            this.loadingInitial = true;
+            this.setLoadingInitial(true);
             try {
                 activity = await agent.Activities.details(id);
                 this.setActivity(activity);
-                runInAction(() => {
-                    this.selectedActivity = activity;
-                })
-                this.setLoadingIntial(false);
+                runInAction(() => this.selectedActivity = activity);
+                this.setLoadingInitial(false);
                 return activity;
             }catch (error){
                 console.log(error);
-                this.setLoadingIntial(false);
+                this.setLoadingInitial(false);
             }
         }
     }
 
     private setActivity = (activity: Activity) => {
-        activity.date = activity.date.split('T')[0];
+        activity.date = new Date(activity.date!);
         this.activityRegistry.set(activity.id, activity)
     }
 
@@ -74,13 +74,14 @@ export default class ActivityStore {
         return this.activityRegistry.get(id);
     }
 
-    setLoadingIntial = (state: boolean) => {
+    setLoadingInitial = (state: boolean) => {
         this.loadingInitial = state;
     }
 
    
     createActivity = async (activity: Activity) => {
         this.loading = true;
+        activity.id = uuid();
         try {
             await agent.Activities.create(activity);
             runInAction(() => {
@@ -91,9 +92,9 @@ export default class ActivityStore {
             })
         } catch (error) {
             console.log(error);
-            runInAction(() => {
-                this.loading = false;
-            })
+            runInAction(() => 
+                this.loading = false
+            );
         }
     }
 
@@ -110,9 +111,9 @@ export default class ActivityStore {
             })
         } catch (error) {
             console.log(error);
-            runInAction(() => {
-                this.loading = false;
-            })
+            runInAction(() => 
+                this.loading = false
+            );
         }
     }
 
@@ -132,3 +133,4 @@ export default class ActivityStore {
         }
     }
 }
+
