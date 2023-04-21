@@ -1,3 +1,5 @@
+using Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -11,17 +13,18 @@ namespace API
 
             using var scope = host.Services.CreateScope();
 
-            var Services = scope.ServiceProvider;
+            var services = scope.ServiceProvider;
 
             try
             {
-                var context  = Services.GetRequiredService<DataContext>();
+                var context  = services.GetRequiredService<DataContext>();
+                var userManager = services.GetRequiredService<UserManager<AppUser>>();
                 await context.Database.MigrateAsync();
-                await Seed.SeedData(context);
+                await Seed.SeedData(context, userManager);
             }
             catch (Exception ex)
             {
-                var logger = Services.GetRequiredService<ILogger<Program>>();
+                var logger = services.GetRequiredService<ILogger<Program>>();
                 logger.LogError(ex, "An error occured during migration");
             }
 
