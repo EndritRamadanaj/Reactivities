@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj": {}
+    "c:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj": {
+    "c:\\Users\\Hp\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj",
+        "projectUniqueName": "c:\\Users\\Hp\\Reactivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj",
+        "projectPath": "c:\\Users\\Hp\\Reactivities\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Application\\obj\\",
+        "outputPath": "c:\\Users\\Hp\\Reactivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj"
+              "c:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj": {
+                "projectPath": "c:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
+    "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\Hp\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "c:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\Hp\\Reactivities\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,15 +158,14 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj"
+              "c:\\Users\\Hp\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "c:\\Users\\Hp\\Reactivities\\Application\\Application.csproj"
               }
             }
           }
@@ -180,6 +179,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.20.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -200,14 +205,14 @@
         }
       }
     },
-    "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\Hp\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -224,8 +229,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj"
+              "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
