@@ -96,3 +96,5 @@ C:\Users\Hp\Reactivities\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.
 C:\Users\Hp\Reactivities\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Hp\Reactivities\API\bin\Debug\net7.0\Infrastructure.dll
 C:\Users\Hp\Reactivities\API\bin\Debug\net7.0\Infrastructure.pdb
+C:\Users\Hp\Reactivities\API\bin\Debug\net7.0\CloudinaryDotNet.dll
+C:\Users\Hp\Reactivities\API\bin\Debug\net7.0\Newtonsoft.Json.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vF8Qy/GCXFTnmDMosuUqF9+wnLlh2s57MhWouJ0Z16nLn4svjZ8liip3GlN+v3sjD813x5uTbqr45vZclnYJig==",
+  "dgSpecHash": "cnC+uxVubWcZPt//YB1hH21+84i3LVA/k9kDefFce2m1jp3+8VNMMVmNveqnO2zuknUdPY7qHlfT566RiNgcww==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
