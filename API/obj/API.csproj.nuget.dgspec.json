@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Reactivities\\API\\API.csproj": {}
+    "C:\\Users\\Hp\\Reactivities\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Reactivities\\API\\API.csproj": {
+    "C:\\Users\\Hp\\Reactivities\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Hp\\Reactivities\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\API\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\Reactivities\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
