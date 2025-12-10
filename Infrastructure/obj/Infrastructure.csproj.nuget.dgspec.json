@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\Endrit\\Projects\\Reactivities\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj": {
+    "C:\\Users\\Endrit\\Projects\\Reactivities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Endrit\\Projects\\Reactivities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Endrit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Endrit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Endrit\\Projects\\Reactivities\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -41,7 +45,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -76,21 +86,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
+    "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Endrit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Endrit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -110,7 +124,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -137,21 +157,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Endrit\\Projects\\Reactivities\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Endrit\\Projects\\Reactivities\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Endrit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Endrit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,8 +189,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Application\\Application.csproj"
+              "C:\\Users\\Endrit\\Projects\\Reactivities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Application\\Application.csproj"
               }
             }
           }
@@ -175,7 +199,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -202,21 +232,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Endrit\\Projects\\Reactivities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Endrit\\Projects\\Reactivities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Hp\\Reactivities\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Reactivities\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Endrit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Endrit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -230,8 +264,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Hp\\Reactivities\\Domain\\Domain.csproj"
+              "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Endrit\\Projects\\Reactivities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -240,7 +274,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -253,6 +293,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.18, )"
             }
           },
           "imports": [
@@ -271,7 +315,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
